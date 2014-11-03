@@ -47,7 +47,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'tasks42.mw.SaveHttpRequest',
+    'tasks42.middleware.SaveHttpRequest',
 )
 
 ROOT_URLCONF = 'forty_two_tasks.urls'
