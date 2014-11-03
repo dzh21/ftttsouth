@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from tasks42.models import RequestObject
-from datetime import datetime
+from datetime import datetime as dt
 
 
 class SaveHttpRequest(object):
@@ -8,5 +8,5 @@ class SaveHttpRequest(object):
         req = RequestObject()
         req.desc = request
         req.remote_address = request.META['REMOTE_ADDR']
-        req.event_date_time = datetime.now()
+        req.event_date_time = dt.now()
         req.save()
