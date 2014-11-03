@@ -65,6 +65,9 @@ class MainViewTest(TestCase):
         settings_in_context = response.context['settings']
         self.assertEquals(len(list(settings_in_context)) > 0, True)
 
+        self.assertEquals(settings_in_context['USE_TZ'], True)
+        self.assertEquals(settings_in_context['TIME_ZONE'], 'Europe/Minsk')
+
 
 class RequestsViewTest(TestCase):
 
